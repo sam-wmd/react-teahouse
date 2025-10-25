@@ -1,0 +1,53 @@
+{
+    "items": [
+    {
+      "id": 1,
+      "title": "Aurora Fade Wireless Earbuds",
+      "subtitle": "Fade all the way to bed",
+      "desc": "Modern true wireless earbuds featuring a stunning gradient finish that transitions from turquoise to pink/coral tones. These in-ear buds showcase a sleek, ergonomic design with subtle touch controls and a contemporary aesthetic perfect for music lovers who appreciate style as much as sound quality.",
+      "intro":
+        "These earbuds went to art school and majored in 'Looking Absolutely Stunning While Playing Your Spotify Playlists.' The gradient? That's just them showing off.",
+      "src": "transparent_images/img1.png"
+    },
+    {
+      "id": 2,
+      "title": "Premium Stem-Style Wireless Earbuds",
+      "desc": "Sleek wireless earbuds with distinctive elongated stems and replaceable silicone tips in glossy white finish. The modern design combines ergonomic comfort with sophisticated aesthetics, featuring noise-cancelling technology and intuitive touch controls for the ultimate listening experience.",
+      "intro":
+        "The sophisticated cousin at the earbud family reunion. You know, the one who always looks polished and refuses to get tangled up in drama... or cables.",
+      "src": "transparent_images/img2.png"
+    },
+    {
+      "id": 3,
+      "title": "Audio-Technica M-Series Studio Headphones",
+      "desc": "Professional-grade over-ear monitoring headphones with signature Audio-Technica circular design elements and plush cushioned ear cups. These studio-quality headphones feature a foldable design with adjustable headband, delivering exceptional sound isolation and accuracy favored by audio professionals worldwide.",
+      "intro":
+        "When your music deserves to be heard the way the artist intended—not the way your phone's built-in speaker thinks is 'good enough.' These are the headphones that whisper, 'You're better than that.'",
+      "src": "transparent_images/img3.png"
+    },
+    {
+      "id": 4,
+      "title": "Black Edition Pro Monitoring Headphones",
+      "desc": "Professional monitoring headphones in all-black finish with substantial over-ear cups and padded headband for extended session comfort. Built for serious audio work with durable construction, precise sound reproduction, and effective noise isolation ideal for studio recording, mixing, and critical listening.",
+      "intro":
+        "All black everything. These headphones don't do 'casual listening'—they do 'I take my music seriously and my fashion choices even more seriously.'",
+      "src": "transparent_images/img4.png"
+    },
+    {
+      "id": 5,
+      "title": "Vintage-Inspired Leather Headphones",
+      "desc": "Luxury over-ear headphones featuring genuine leather ear cushions in dark brown and a tan leather headband with contrasting metal accents. This premium design merges retro aesthetics with modern audio technology, offering both timeless style and exceptional acoustic performance for the discerning listener.",
+      "intro":
+        "For when you want your headphones to match your vintage record collection, leather jacket, and general 'I have impeccable taste' vibe. Audio equipment or fashion statement? Yes.",
+      "src": "transparent_images/img5.png"
+    },
+    {
+      "id": 6,
+      "title": "Canon EOS 7D Mark II Professional DSLR",
+      "desc": "High-performance Canon DSLR camera featuring advanced autofocus, weather-sealed body, and professional-grade imaging capabilities. Shown with standard zoom lens, this camera body delivers exceptional speed and precision for sports, wildlife, and action photography enthusiasts who demand reliability in challenging conditions.",
+      "intro":
+        "This camera has taken more sharp photos than you've had sharp retorts in arguments. It's basically the comeback queen of the photography world—fast, precise, and always ready.",
+      "src": "transparent_images/img6.png"
+    }
+  ]
+}
