@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
+import { libInjectCss } from 'vite-plugin-lib-inject-css';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -13,15 +14,16 @@ export default defineConfig({
       // Specify the path to the build-specific tsconfig file
       tsconfigPath: "./tsconfig.build.json",
     }),
+    libInjectCss()
   ],
   // Build configuration options
   build: {
     // Library build options
     lib: {
       // Entry point for the library build
-      entry: "components/index.ts",
+      entry: "./lib/index.ts",
       // Function to determine the output file name based on the format
-      fileName: (format) => `swmd.${format}.js`,
+      fileName: (format) => `smooth-carousel.${format}.js`,
       // Output formats for the library
       formats: ["es", "cjs"],
     },

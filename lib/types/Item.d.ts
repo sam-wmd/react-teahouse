@@ -1,4 +1,4 @@
-export type Item = {
+type Item = {
   id: number;
   title: string,
   subtitle?: string,
@@ -7,7 +7,4 @@ export type Item = {
   src: string
 };
 
-
-export type ListItems = {
-    items: Item[]
-}
+export default Item;
