@@ -1,16 +1,25 @@
 import { useEffect, useRef, useState } from "react";
 import "./Carousel.css";
-import type Item from "../types/Item";
-type CarouselProps = {
-  listItems: Item[];
+import type { CarouselOptions, CarouselProps } from "../types/Carousel";
+
+const defaultOptions: CarouselOptions = {
+  showSeeMoreButton: true,
+  seeMoreButtonText: "See more",
+  showBackButton: true,
+  backButtonText: "Back",
+  fullScreen: false,
+  showNavigationButtons: true,
 };
-const Carousel: React.FC<CarouselProps> = ({ listItems }) => {
+const Carousel: React.FC<CarouselProps> = ({ listItems, options }) => {
+  const carouselOptions = { ...defaultOptions, ...options };
+  const defaultClassList = options?.fullScreen
+    ? ["carousel", "fullscreen"]
+    : ["carousel"];
+
   const [buttonsDiabled, setButtonsDisabled] = useState(false);
-  const [carouselClasslist, setCarouselClasslist] = useState(["carousel"]);
+  const [carouselClasslist, setCarouselClasslist] = useState(defaultClassList);
   const listRef = useRef(null);
-  const nextBtnRef = useRef(null);
-  const prevBtnRef = useRef(null);
-  const carouselRef = useRef(null);
+
   useEffect(() => {
     document.addEventListener("keyup", handleKeyboardNavigation);
     return () => {
@@ -37,7 +46,7 @@ const Carousel: React.FC<CarouselProps> = ({ listItems }) => {
   };
 
   const resetCarousel = () => {
-    setCarouselClasslist(["carousel"]);
+    setCarouselClasslist(defaultClassList);
   };
 
   const addClassToCarousel = (newClass: string) => {
@@ -76,7 +85,7 @@ const Carousel: React.FC<CarouselProps> = ({ listItems }) => {
   const isShowingDetail = () =>
     carouselClasslist.find((p) => p == "showDetail") != null;
   return (
-    <div className={carouselClasslist.join(" ")} ref={carouselRef}>
+    <div className={carouselClasslist.join(" ")}>
       <div className="list" ref={listRef}>
         {listItems.map(({ title, desc, intro, id, src, subtitle }: any) => {
           return (
@@ -86,9 +95,11 @@ const Carousel: React.FC<CarouselProps> = ({ listItems }) => {
                 <div className="title">{title}</div>
                 {subtitle && <div className="subtitle">{subtitle}</div>}
                 <div className="des">{intro}</div>
-                <button className="seeMore" onClick={seeMore}>
-                  SEE MORE
-                </button>
+                {carouselOptions.showSeeMoreButton && (
+                  <button className="seeMore" onClick={seeMore}>
+                    {carouselOptions.seeMoreButtonText.toUpperCase()}
+                  </button>
+                )}
               </div>
               <div className="detail">
                 <div className="title">{title}</div>
@@ -100,25 +111,28 @@ const Carousel: React.FC<CarouselProps> = ({ listItems }) => {
         })}
       </div>
       <div className="arrows">
-        <button
-          id="prev"
-          ref={prevBtnRef}
-          disabled={buttonsDiabled}
-          onClick={() => showSlider("prev")}
-        >
-          {"<"}
-        </button>
-        <button
-          id="next"
-          ref={nextBtnRef}
-          disabled={buttonsDiabled}
-          onClick={() => showSlider("next")}
-        >
-          {">"}
-        </button>
-        {isShowingDetail() && (
+        {carouselOptions.showNavigationButtons && (
+          <>
+            <button
+              id="prev"
+              disabled={buttonsDiabled}
+              onClick={() => showSlider("prev")}
+            >
+              {"<"}
+            </button>
+            <button
+              id="next"
+              disabled={buttonsDiabled}
+              onClick={() => showSlider("next")}
+            >
+              {">"}
+            </button>
+          </>
+        )}
+
+        {isShowingDetail() && carouselOptions.showBackButton && (
           <button id="back" onClick={seeAll}>
-            Back
+            {carouselOptions.backButtonText.toUpperCase()}
           </button>
         )}
       </div>

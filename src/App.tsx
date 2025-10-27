@@ -4,7 +4,17 @@ import { items } from "./resources/items.json";
 function App() {
   return (
     <>
-      <Carousel listItems={items} />
+      <Carousel
+        listItems={items}
+        options={{
+          fullScreen: true,
+          showBackButton: true,
+          backButtonText: "Go back, go back !",
+          showSeeMoreButton: false,
+          seeMoreButtonText: "blabla",
+          showNavigationButtons: false,
+        }}
+      />
     </>
   );
 }

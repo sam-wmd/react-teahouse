@@ -24,6 +24,11 @@
     --item5-zIndex: 7;
     --item5-opacity: 0;
 }
+
+.carousel.fullscreen{
+    height: 100vh;
+    width: 100vw;
+}
     /* carousel */
 .carousel{
     position: relative;
