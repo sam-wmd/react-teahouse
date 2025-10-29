@@ -1,4 +1,4 @@
-import Carousel from "../lib/components/Carousel";
+import { Carousel } from "../lib/components/Carousel";
 import "./App.css";
 import { items } from "./resources/items.json";
 function App() {

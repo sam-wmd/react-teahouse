@@ -2,7 +2,7 @@
     "include": ["lib/**/*"],
     "exclude": ["node_modules","dist","src"],
     "compilerOptions": {
-        "module": "esnext",
+        "module": "es2022",
         "outDir": "./dist",
         "rootDir": "./lib",
         "declaration": true,
@@ -12,7 +12,6 @@
         "strict": false,
         "skipLibCheck": true,
         "lib": ["ES2022","DOM", "DOM.Iterable"],
-        "allowImportingTsExtensions": true,
         "moduleResolution": "bundler",
         "types": ["react","react-dom"]
     }

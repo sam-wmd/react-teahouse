@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Carousel.css";
-import type { CarouselOptions, CarouselProps } from "../types/Carousel";
+import type { CarouselOptions, CarouselProps } from "../types";
 
 const defaultOptions: CarouselOptions = {
   showSeeMoreButton: true,
@@ -92,9 +92,23 @@ const Carousel: React.FC<CarouselProps> = ({ listItems, options }) => {
             <div className="item" key={id}>
               <img src={src} alt={title} />
               <div className="introduce">
-                <div className="title">{title}</div>
-                {subtitle && <div className="subtitle">{subtitle}</div>}
-                <div className="des">{intro}</div>
+                <div className="title" style={{ color: options.titleColor }}>
+                  {title}
+                </div>
+                {subtitle && (
+                  <div
+                    className="subtitle"
+                    style={{ color: options.subtitleColor }}
+                  >
+                    {subtitle}
+                  </div>
+                )}
+                <div
+                  className="des"
+                  style={{ color: options.descriptionColor }}
+                >
+                  {intro}
+                </div>
                 {carouselOptions.showSeeMoreButton && (
                   <button className="seeMore" onClick={seeMore}>
                     {carouselOptions.seeMoreButtonText.toUpperCase()}
@@ -102,9 +116,23 @@ const Carousel: React.FC<CarouselProps> = ({ listItems, options }) => {
                 )}
               </div>
               <div className="detail">
-                <div className="title">{title}</div>
-                {subtitle && <div className="subtitle">{subtitle}</div>}
-                <div className="des">{desc}</div>
+                <div className="title" style={{ color: options.titleColor }}>
+                  {title}
+                </div>
+                {subtitle && (
+                  <div
+                    className="subtitle"
+                    style={{ color: options.subtitleColor }}
+                  >
+                    {subtitle}
+                  </div>
+                )}
+                <div
+                  className="des"
+                  style={{ color: options.descriptionColor }}
+                >
+                  {desc}
+                </div>
               </div>
             </div>
           );
@@ -140,4 +168,4 @@ const Carousel: React.FC<CarouselProps> = ({ listItems, options }) => {
   );
 };
 
-export default Carousel;
+export { Carousel };
