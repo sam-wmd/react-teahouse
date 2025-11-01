@@ -1,0 +1,52 @@
+{
+  "sandals":[
+  {
+    "id": 1,
+    "title": "Classic Slide Sandals",
+    "subtitle": "Nike Victori One",
+    "intro": "For when you want to feel like you're walking on athletic clouds, but also let everyone know you just came from the gym (or want them to think you did).",
+    "desc": "Black slide sandals with a cushioned footbed and textured sole. Features the iconic swoosh logo and a wide, comfortable strap design perfect for post-workout recovery or casual wear.",
+    "src": "transparent_images/sandals.png"
+  },
+  {
+    "id": 2,
+    "title": "Performance Flip-Flops",
+    "subtitle": "Athletic Thong Sandals",
+    "intro": "Because sometimes your feet need the structural support of a hiking boot, but in flip-flop form. Yes, that's a thing now.",
+    "desc": "Gray athletic flip-flops with an ergonomic footbed and aggressive tread pattern. Built with arch support and durable construction for active lifestyles, featuring a sporty design with black accents.",
+    "src": "transparent_images/sandals2.png"
+  },
+  {
+    "id": 3,
+    "title": "Casual Fabric Flip-Flops",
+    "subtitle": "Canvas Thong Sandals",
+    "intro": "The burgundy rebels of the flip-flop world—soft, sophisticated, and proof that beach shoes can have a personality.",
+    "desc": "Burgundy red flip-flops with a soft fabric footbed and woven textile straps. Handcrafted appearance with visible stitching around the edges, combining comfort with a unique casual style.",
+    "src": "transparent_images/sandals3.png"
+  },
+  {
+    "id": 4,
+    "title": "Cozy Knit Slippers",
+    "subtitle": "Sherpa-Lined House Shoes",
+    "intro": "It's like wrapping your feet in a warm hug from a very stylish sweater. Winter feet have never been this bougie.",
+    "desc": "Navy blue cable-knit slippers with plush white sherpa lining. Features a closed-toe design with comfortable cushioning and indoor/outdoor soles, perfect for keeping feet warm during cold months.",
+    "src": "transparent_images/sandals4.png"
+  },
+  {
+    "id": 5,
+    "title": "Minimalist Logo Slippers",
+    "subtitle": "Designer House Slides",
+    "intro": "When you want to casually flex your designer taste while shuffling to the kitchen for midnight snacks.",
+    "desc": "Light gray slip-on slippers with subtle branding. Clean, minimalist design with a comfortable fit and dark contrasting trim, ideal for indoor lounging with an understated luxury aesthetic.",
+    "src": "transparent_images/sandals5.png"
+  },
+  {
+    "id": 6,
+    "title": "Quilted Comfort Slippers",
+    "subtitle": "Plush Memory Foam House Shoes",
+    "intro": "These coral cuties are basically tiny pillows for your feet—with a 'HOME' label in case your feet forget where they live.",
+    "desc": "Coral pink quilted slippers with luxurious white fleece lining. Features diamond-pattern stitching, memory foam cushioning, and a 'HOME' emblem, combining warmth and comfort with a cozy, homey design.",
+    "src": "transparent_images/sandals6.png"
+  }
+]
+}

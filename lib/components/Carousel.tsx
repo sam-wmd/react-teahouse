@@ -90,7 +90,7 @@ const Carousel: React.FC<CarouselProps> = ({ listItems, options }) => {
         {listItems.map(({ title, desc, intro, id, src, subtitle }: any) => {
           return (
             <div className="item" key={id}>
-              <img src={src} alt={title} />
+              <img src={src} alt={title} width={200} height={400} />
               <div className="introduce">
                 <div className="title" style={{ color: options.titleColor }}>
                   {title}

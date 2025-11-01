@@ -94,6 +94,7 @@
 }
 .carousel .list .item .introduce .des{
     font-size: small;
+    width: 90%;
 }
 .carousel .list .item .introduce .seeMore{
     font-family: Poppins;

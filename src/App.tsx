@@ -1,6 +1,6 @@
 import { Carousel } from "../lib/components/Carousel";
 import "./App.css";
-import { items } from "./resources/items.json";
+import { earphones as items } from "./resources/earphones.json";
 function App() {
   return (
     <>
