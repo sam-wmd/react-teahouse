@@ -23,7 +23,7 @@ export default defineConfig({
       // Entry point for the library build
       entry: "./lib/index.ts",
       // Function to determine the output file name based on the format
-      fileName: (format) => `smooth-carousel.${format}.js`,
+      fileName: (format) => `react-teahouse.${format}.js`,
       // Output formats for the library
       formats: ["es", "cjs"],
     },

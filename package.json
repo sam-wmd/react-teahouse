@@ -1,5 +1,5 @@
 {
-  "name": "smooth-carousel",
+  "name": "react-teahouse",
   "private": false,
   "version": "0.0.1",
   "type": "module",
@@ -10,15 +10,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sam-wmd/smooth-carousel"
+    "url": "https://github.com/sam-wmd/react-teahouse"
   },
-  "main": "dist/smooth-carousel.cjs.js",
-  "module": "./dist/smooth-carousel.es.js",
+  "main": "dist/react-teahouse.cjs.js",
+  "module": "./dist/react-teahouse.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/smooth-carousel.es.js",
-      "require": "./dist/smooth-carousel.cjs.js"
+      "import": "./dist/react-teahouse.es.js",
+      "require": "./dist/react-teahouse.cjs.js"
     }
   },
   "scripts": {
