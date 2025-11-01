@@ -3,8 +3,8 @@
 <br />
 <div align="center">
   <h3 align="center">React Teahouse 🍵</h3>
-  <a href="https://github.com/sam-wmd/smooth-carousel">
-    <img src="public/smooth-carousel.gif" alt="Logo" >
+  <a href="https://github.com/sam-wmd/react-teahouse">
+    <img src="public/react-teahouse.gif" alt="Logo" >
   </a>
 </div>
 
@@ -39,7 +39,7 @@ This is a simple carousel component to be used in react
 ### Install the package
 
 ```sh
-npm install smooth-carousel
+npm install react-teahouse
 ```
 
 ### Prepare a list of items of the following type
@@ -60,7 +60,7 @@ export type Item = {
 ### Try out your first component
 
 ```js
-import { Carousel } from "smooth-carousel";
+import { Carousel } from "react-teahouse";
 import { items } from "./resources/items.json";
 export const App = () => {
 return (
@@ -100,7 +100,7 @@ Don't forget to give the project a star if you find it useful. Thanks again!
 
 Samuel - https://linkedin.com/in/samwmd
 
-Github Link: https://github.com/samwmd/smooth-carousel
+Github Link: https://github.com/samwmd/react-teahouse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
