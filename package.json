@@ -6,6 +6,12 @@
   "files": [
     "dist"
   ],
+  "author": "Samuel Wamundagu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sam-wmd/smooth-carousel"
+  },
   "main": "dist/smooth-carousel.cjs.js",
   "module": "./dist/smooth-carousel.es.js",
   "types": "./dist/index.d.ts",
